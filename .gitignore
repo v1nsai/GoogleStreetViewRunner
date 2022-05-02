@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Ignore pre-cached images
+image_service/cache/*
+
+# Ignore private Google API key
+google_api_key.txt
