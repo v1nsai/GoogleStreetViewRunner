@@ -3,14 +3,14 @@ from pathlib import Path
 from sys import exit
 
 ### Fill these in ###
-origin = ""
-destination = ""
+origin = "274 Honeysuckle Way, Niceville, Florida 32578"
+destination = "Walmart, Niceville, Florida"
 #####################
-if origin == None or destination == None:
+if origin == "" or destination == "":
     exit('Fill in source and destination in app.py in the project root to generate a route')
 
 try:
-    api_key = Path('image_sefrvice/google_api_key.txt').read_text()
+    api_key = Path('image_service/google_api_key.txt').read_text()
 except Exception as e:
     print(e)
     exit('Make sure you have pasted your Google API key into a file called google_api_key.txt in the project root')
